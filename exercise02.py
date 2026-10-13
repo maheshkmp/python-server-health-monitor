@@ -11,24 +11,19 @@ def load_server(filename):
 
 	except  json.JSONDecodeError:
 		print("ERROR: Invalid JSON format")
-		
-
 
 def check_server(servers):
 	warnings = []
 	for server, metrics in  servers.items():
 		if metrics["cpu"] > 80 and metrics["memory"]> 80:
 			warnings.append(f"{server} - high cpu & high memory")
-			
+
 		elif metrics["cpu"] > 80:
 			warnings.append(f"{server} - high cpu")
-                        
 
 		elif metrics["memory"] > 80:
 			warnings.append(f"{server} - high memory")
-                        
 
-	
 	return warnings
 
 servers = load_server("servers.json")

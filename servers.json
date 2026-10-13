@@ -1,18 +1,13 @@
 {
     "web-01": {
         "cpu": 45,
-        "memory": 62
+        "memory": 60
     },
     "web-02": {
-        "cpu": 82,
-        "memory": 71
+        "cpu": 92,
+        "memory": 85
     },
     "db-01": {
-        "cpu": 31,
-        "memory": 88
-    },
-    "cache-01": {
-        "cpu": 91,
-        "memory": 93
+        "cpu": 35
     }
 }
